@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+nav{
+    background:#0d6efd;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+}
+
+nav .logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#0d6efd;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#084298;
+}
+
+/* Features */
+.features{
+    padding:70px 10%;
+    text-align:center;
+}
+
+.features h2{
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.feature-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+/* About */
+.about{
+    background:#e9ecef;
+    padding:70px 10%;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+/* Contact */
+.contact{
+    padding:70px 10%;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact form{
+    max-width:500px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.contact button:hover{
+    background:#084298;
+}
+
+/* Footer */
+footer{
+    background:#212529;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:10px;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">MyLanding</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Build Your Future With Us</h1>
+        <p>Create beautiful websites and grow your skills.</p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features" id="features">
+    <h2>Our Features</h2>
+
+    <div class="feature-container">
+
+        <div class="card">
+            <h3>Fast Performance</h3>
+            <p>Optimized design and smooth user experience.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive Design</h3>
+            <p>Works perfectly on mobile, tablet, and desktop.</p>
+        </div>
+
+        <div class="card">
+            <h3>Easy Customization</h3>
+            <p>Modify and personalize according to your needs.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        This landing page project demonstrates HTML and CSS skills,
+        including layouts, sections, cards, navigation bars,
+        responsiveness, and modern UI design.
+    </p>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 MyLanding. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
